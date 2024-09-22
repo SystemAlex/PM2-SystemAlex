@@ -3,8 +3,11 @@ por SystemAlex
 ### Implementacion en linea https://systemalex.free.nf/m2
 
 
-## Lecture 1 - Proyectos Full Stack
-⌛...
+## Lecture 1 - Proyectos Full Stack ✔️
+ - Diseño de páginas web con HTML. ✓
+ - Creación de enlaces y navegación con HTML. ✓
+ - Estilos con CSS. ✓
+ - Manipulación del DOM con JavaScript. ✓
 
 ## Lecture 2 - AJAX
 ⌛...
