@@ -1,13 +1,12 @@
 :root {
     --var-azul: #226DD6;
     --var-azul-dark: #03447E;
-    --var-azul-light: #BFCFFE;
+    --var-azul-light: #D8E6F9;
     --cs: 30px;
 }
 
 * {
     font-family: 'Satoshi', sans-serif;
-    font-weight: 900;
     transition: all 500ms ease-in-out;
 }
 
@@ -95,11 +94,15 @@ hr {
             padding: 2px 15px 0px 15px;
             background-color: #001926;
             height: 24px;
+            width: 100px;
+            text-align: center;
         }
 
             .top-menu li a:hover, .top-menu li .active, .film-menu li a:hover {
                 background-color: var(--var-azul);
                 color: #001926;
+                width: calc(130px * 1.1);
+                font-size: calc(16px * 1.1);
             }
 
         .top-menu li h2 {
@@ -109,6 +112,7 @@ hr {
             left: 0px;
             right: 0px;
             pointer-events: none;
+            text-shadow: 0px 0px 3px var(--var-azul-dark);
         }
 
 .film-menu {
@@ -272,12 +276,15 @@ hr {
     transform-origin: top center;
     box-shadow: 0 1px 1px 0 var(--var-azul-dark), 0 1px 1px 0 var(--var-azul-dark);
     scale: 90%;
+    border: 1px solid transparent;
 }
 
     .catalogo_item:hover {
         scale: 100%;
+        border-radius: 10px;
         z-index: 1;
-        box-shadow: 0 2px 5px 0 var(--var-azul-dark), 0 2px 10px 0 var(--var-azul-dark);
+        box-shadow: 0 2px 5px 0 var(--var-azul-light), 0 2px 10px 0 var(--var-azul-light);
+        border: 1px solid var(--var-azul-dark);
     }
 
         .catalogo_item:hover figcaption {
@@ -285,14 +292,19 @@ hr {
             opacity: 1;
         }
 
-        .catalogo_item:hover img {
+        .catalogo_item:hover .film {
+            animation: rollFilm 4s linear 0s infinite normal none;
         }
 
-        .catalogo_item:hover a {
-        }
+@keyframes rollFilm {
+    0% {
+        background-position-y: 0px;
+    }
 
-        .catalogo_item:hover .delButton {
-        }
+    100% {
+        background-position-y: -536px;
+    }
+}
 
 figure {
     position: relative;
@@ -309,11 +321,14 @@ figure {
         padding: 5px;
         display: block;
         background-color: var(--var-azul);
+        color: var(--var-azul-light);
+        font-weight: bolder;
     }
 
     figure .poster {
         position: relative;
         padding: 5px 38px;
+        color: var(--var-azul-dark);
     }
 
     figure .ano {
@@ -324,19 +339,12 @@ figure {
         border-radius: 3px;
     }
 
-    figure .rating-pos {
+    figure .rating {
         position: absolute;
         left: 38px;
         background-color: var(--var-azul-light);
         padding: 0px 4px;
         border-radius: 3px;
-    }
-
-    figure .rating {
-        background-color: #ffffff;
-        padding: 0px 4px;
-        border-radius: 3px;
-        display: flex;
         display: inline-flex;
         align-items: baseline;
     }
@@ -359,6 +367,8 @@ figcaption {
     font-size: small;
     position: absolute;
     bottom: 0px;
+    left: 0px;
+    right: 0px;
 }
 
 .film {
@@ -368,6 +378,20 @@ figcaption {
     top: 0px;
     bottom: 0px;
     pointer-events: none;
+    background-image: url("../assets/film.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-y: 0px;
+}
+
+@keyframes rollFilm {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -536px;
+    }
 }
 
 #peliculas {
