@@ -1,7 +1,7 @@
 :root {
-    --var-azul: #226dd6;
-    --var-azul-dark: #154689;
-    --var-azul-light: #2881ff;
+    --var-azul: #226DD6;
+    --var-azul-dark: #03447E;
+    --var-azul-light: #BFCFFE;
     --cs: 30px;
 }
 
@@ -17,7 +17,7 @@
 }
 
 html {
-    background: #A5BAB9;
+    background: #F2F5FF;
     scroll-behavior: smooth;
 }
 
@@ -93,13 +93,13 @@ hr {
             display: block;
             border-top: 4px solid var(--var-azul);
             padding: 2px 15px 0px 15px;
-            background-color: #383e41;
+            background-color: #001926;
             height: 24px;
         }
 
             .top-menu li a:hover, .top-menu li .active, .film-menu li a:hover {
                 background-color: var(--var-azul);
-                color: #383e41;
+                color: #001926;
             }
 
         .top-menu li h2 {
@@ -139,6 +139,10 @@ hr {
     justify-content: center;
 }
 
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -152,7 +156,7 @@ hr {
     text-shadow: 0 0 5px #00a5ff, 0 0 15px #00a5ff, 0 0 20px #00a5ff, 0 0 40px #00a5ff, 0 0 60px #0000ff, 0 0 10px #008dff, 0 0 98px #0000ff;
 }
 
-.datos, .proyecto, .catalogo {
+.datos, .proyecto {
     border-radius: 1rem;
     border: 2px solid var(--var-azul-dark);
     overflow: hidden;
@@ -260,6 +264,112 @@ hr {
     overflow: auto;
 }
 
+.catalogo_item {
+    height: 299px !important;
+    width: 250px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    transform-origin: top center;
+    box-shadow: 0 1px 1px 0 var(--var-azul-dark), 0 1px 1px 0 var(--var-azul-dark);
+    scale: 90%;
+}
+
+    .catalogo_item:hover {
+        scale: 100%;
+        z-index: 1;
+        box-shadow: 0 2px 5px 0 var(--var-azul-dark), 0 2px 10px 0 var(--var-azul-dark);
+    }
+
+        .catalogo_item:hover figcaption {
+            scale: 100% 100%;
+            opacity: 1;
+        }
+
+        .catalogo_item:hover img {
+        }
+
+        .catalogo_item:hover a {
+        }
+
+        .catalogo_item:hover .delButton {
+        }
+
+figure {
+    position: relative;
+}
+
+    figure img {
+        max-width: 100%;
+        width: 100%;
+        vertical-align: middle;
+        height: auto;
+    }
+
+    figure a {
+        padding: 5px;
+        display: block;
+        background-color: var(--var-azul);
+    }
+
+    figure .poster {
+        position: relative;
+        padding: 5px 38px;
+    }
+
+    figure .ano {
+        position: absolute;
+        right: 38px;
+        background-color: var(--var-azul-light);
+        padding: 0px 4px;
+        border-radius: 3px;
+    }
+
+    figure .rating-pos {
+        position: absolute;
+        left: 38px;
+        background-color: var(--var-azul-light);
+        padding: 0px 4px;
+        border-radius: 3px;
+    }
+
+    figure .rating {
+        background-color: #ffffff;
+        padding: 0px 4px;
+        border-radius: 3px;
+        display: flex;
+        display: inline-flex;
+        align-items: baseline;
+    }
+
+    figure .rating-star {
+        height: 0.8em;
+        width: 1em;
+        margin-right: 0.15em
+    }
+
+figcaption {
+    scale: 100% 0%;
+    opacity: 0;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: var(--var-azul-light);
+    background: var(--var-azul);
+    font-size: small;
+    position: absolute;
+    bottom: 0px;
+}
+
+.film {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+
 #peliculas {
     background-image: url("../assets/movie-background-collage.jpg");
 }
@@ -274,4 +384,13 @@ hr {
 
 #proyecto {
     background-image: url("../assets/codigo.jpg");
+}
+
+#catalogo {
+    flex-wrap: wrap;
+    overflow: auto;
+    border-radius: 1rem;
+    border: 2px solid var(--var-azul-dark);
+    margin: 0.5rem;
+    padding: 12px;
 }
