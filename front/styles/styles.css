@@ -274,7 +274,7 @@ hr {
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     transform-origin: top center;
-    box-shadow: 0 1px 1px 0 var(--var-azul-dark), 0 1px 1px 0 var(--var-azul-dark);
+    /*box-shadow: 0 1px 1px 0 var(--var-azul-dark), 0 1px 1px 0 var(--var-azul-dark);*/
     scale: 90%;
     border: 1px solid transparent;
 }
@@ -290,6 +290,10 @@ hr {
         .catalogo_item:hover figcaption {
             scale: 100% 100%;
             opacity: 1;
+        }
+
+        .catalogo_item:hover .img {
+            animation: rollFilm 4s linear 0s infinite normal none;
         }
 
         .catalogo_item:hover .film {
@@ -310,11 +314,18 @@ figure {
     position: relative;
 }
 
-    figure img {
-        max-width: 100%;
+    figure .img {
+        /*max-width: 100%;
         width: 100%;
         vertical-align: middle;
-        height: auto;
+        height: 268px;*/
+        max-width: 174px;
+        width: 174px;
+        vertical-align: middle;
+        height: 268px;
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-position-y: 0px;
     }
 
     figure a {
@@ -323,28 +334,32 @@ figure {
         background-color: var(--var-azul);
         color: var(--var-azul-light);
         font-weight: bolder;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     figure .poster {
         position: relative;
-        padding: 5px 38px;
+        padding: 0px 38px;
         color: var(--var-azul-dark);
     }
 
+        figure .ano, figure .rating {
+            z-index: 1;
+            position: absolute;
+            background-color: var(--var-azul-light);
+            padding: 0px 4px;
+            border-radius: 3px;
+            margin: 5px;
+        }
+
     figure .ano {
-        position: absolute;
         right: 38px;
-        background-color: var(--var-azul-light);
-        padding: 0px 4px;
-        border-radius: 3px;
     }
 
     figure .rating {
-        position: absolute;
         left: 38px;
-        background-color: var(--var-azul-light);
-        padding: 0px 4px;
-        border-radius: 3px;
         display: inline-flex;
         align-items: baseline;
     }
@@ -367,8 +382,22 @@ figcaption {
     font-size: small;
     position: absolute;
     bottom: 0px;
-    left: 0px;
-    right: 0px;
+    left: 38px;
+    right: 38px;
+}
+
+.generos b {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: var(--var-azul-dark) !important;
+    border-radius: 50rem !important;
+    margin: 0px 1px;
 }
 
 .film {
