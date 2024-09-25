@@ -68,6 +68,15 @@ hr {
     border-radius: 4px;
 }
 
+.film-menu li a {
+    width: 100px;
+}
+
+    .film-menu li a:hover {
+        width: calc(100px * 1.1);
+        font-size: calc(16px * 1.1);
+    }
+
 .top-menu {
     z-index: 9999;
     align-items: center;
@@ -94,15 +103,12 @@ hr {
             padding: 2px 15px 0px 15px;
             background-color: #001926;
             height: 24px;
-            width: 100px;
             text-align: center;
         }
 
             .top-menu li a:hover, .top-menu li .active, .film-menu li a:hover {
                 background-color: var(--var-azul);
                 color: #001926;
-                width: calc(130px * 1.1);
-                font-size: calc(16px * 1.1);
             }
 
         .top-menu li h2 {
@@ -112,7 +118,7 @@ hr {
             left: 0px;
             right: 0px;
             pointer-events: none;
-            text-shadow: 0px 0px 3px var(--var-azul-dark);
+            text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
         }
 
 .film-menu {
@@ -351,7 +357,7 @@ figure {
             background-color: var(--var-azul-light);
             padding: 0px 4px;
             border-radius: 3px;
-            margin: 5px;
+            margin: 10px 5px;
         }
 
     figure .ano {
@@ -437,6 +443,7 @@ figcaption {
 
 #proyecto {
     background-image: url("../assets/codigo.jpg");
+    text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
 }
 
 #catalogo {
