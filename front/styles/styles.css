@@ -449,8 +449,5 @@ figcaption {
 #catalogo {
     flex-wrap: wrap;
     overflow: auto;
-    border-radius: 1rem;
-    border: 2px solid var(--var-azul-dark);
-    margin: 0.5rem;
     padding: 12px;
 }
