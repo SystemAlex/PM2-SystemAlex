@@ -1,6 +1,6 @@
 //console.log(tempData);
 // Actividad a HTML
-function posterHTML(Poster) {
+const posterHTML = (Poster) => {
     const { title, year, director, duration, genre, rate, poster } = Poster;
 
     const nuevoDiv = document.createElement("div");
@@ -77,7 +77,7 @@ function posterHTML(Poster) {
 }
 
 // Todas los posters a HTML
-function postessHTML() {
+function postersHTML() {
     const catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
@@ -86,4 +86,4 @@ function postessHTML() {
     posters.forEach(elemento => catalogo.appendChild(elemento));
 }
 
-postessHTML();
+postersHTML();

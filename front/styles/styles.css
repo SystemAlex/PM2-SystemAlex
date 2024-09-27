@@ -68,15 +68,6 @@ hr {
     border-radius: 4px;
 }
 
-.film-menu li a {
-    width: 100px;
-}
-
-    .film-menu li a:hover {
-        width: calc(100px * 1.1);
-        font-size: calc(16px * 1.1);
-    }
-
 .top-menu {
     z-index: 9999;
     align-items: center;
@@ -131,7 +122,14 @@ hr {
 
     .film-menu li a {
         border-top: none;
+        width: 100px;
     }
+
+        .film-menu li a:hover {
+            --extra: 1.3;
+            width: calc(100px * var(--extra));
+            font-size: calc(16px * var(--extra));
+        }
 
 .space {
     width: -webkit-fill-available;
@@ -265,7 +263,7 @@ hr {
     }
 
     .pizarra li span:hover, .pizarra li span:focus {
-        transform: scale(1.15);
+        transform: scale(1.25);
         position: relative;
         z-index: 5;
     }
