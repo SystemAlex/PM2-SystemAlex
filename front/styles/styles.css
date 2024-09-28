@@ -2,7 +2,8 @@
     --var-azul: #226DD6;
     --var-azul-dark: #03447E;
     --var-azul-light: #D8E6F9;
-    --cs: 30px;
+    --var-coner: 30px;
+	--var-menu-size: 32px;
 }
 
 * {
@@ -30,8 +31,8 @@ section {
     background-clip: border-box;
     background-position: center top;
     overflow: hidden;
-    padding-top: 32px;
-    height: calc(100vh - 32px);
+    padding-top: var(--var-menu-size);
+    height: calc(100vh - var(--var-menu-size));
 }
 
     section div:first-child {
@@ -83,7 +84,7 @@ hr {
         padding: 1px 1px 1px 0px;
     }
 
-    .top-menu li, .film-menu li {
+    .top-menu li a, .film-menu li a {
         text-wrap: nowrap;
     }
 
@@ -218,8 +219,8 @@ hr {
             content: '';
             position: absolute;
             display: block;
-            width: var(--cs);
-            height: var(--cs);
+            width: var(--var-coner);
+            height: var(--var-coner);
             background-color: rgba(33, 33, 33, .2);
             top: 0;
             right: 0;
@@ -237,7 +238,7 @@ hr {
             transform: rotate(-6deg);
             transition: transform .15s linear;
             border-radius: 10px;
-            clip-path: polygon(0 0, calc(100% - var(--cs)) 0, 100% var(--cs), 100% 100%, 0 100%);
+            clip-path: polygon(0 0, calc(100% - var(--var-coner)) 0, 100% var(--var-coner), 100% 100%, 0 100%);
         }
 
         .pizarra li:nth-child(even) span {
@@ -448,4 +449,18 @@ figcaption {
     flex-wrap: wrap;
     overflow: auto;
     padding: 12px;
+}
+
+@media (max-width:640px) {
+    :root {
+        --var-menu-size: 64px;
+    }
+
+    .top-menu li h2 {
+        top: 32px;
+    }
+
+    .top-menu ul {
+        margin-bottom: 32px;
+    }
 }
