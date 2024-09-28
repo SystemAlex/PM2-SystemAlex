@@ -9,8 +9,9 @@ por SystemAlex
  - Estilos con CSS. ✓
  - Manipulación del DOM con JavaScript. ✓
 
-## Lecture 2 - AJAX
-⌛...
+## Lecture 2 - AJAX ✔️
+ - Manipulación del DOM con JavaScript. ✓
+ - Solicitudes HTTP con AJAX. ✓
 
 ## Lecture 3 - Frameworks CSS
 ⌛...

@@ -81,9 +81,11 @@ function postersHTML() {
     const catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
 
-    const posters = tempData.map(posterHTML);
+    $.get("https://students-api.up.railway.app/movies", (data) => {
+        const posters = data.map(posterHTML);
 
-    posters.forEach(elemento => catalogo.appendChild(elemento));
+        posters.forEach(elemento => catalogo.appendChild(elemento));
+    })
 }
 
 postersHTML();
