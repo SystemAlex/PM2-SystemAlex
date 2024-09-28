@@ -3,7 +3,7 @@
     --var-azul-dark: #03447E;
     --var-azul-light: #D8E6F9;
     --var-coner: 30px;
-	--var-menu-size: 32px;
+    --var-menu-size: 32px;
 }
 
 * {
@@ -112,6 +112,11 @@ hr {
             pointer-events: none;
             text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
         }
+
+    .top-menu li img, .film-menu li img {
+        width: 67px;
+        padding: 0px 15px;
+    }
 
 .film-menu {
     align-items: center;
@@ -425,6 +430,85 @@ figcaption {
 
     100% {
         background-position-y: -536px;
+    }
+}
+
+.loader-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    min-height: 50vh;
+    justify-content: center;
+    /* opacity: 75%; */
+}
+
+.loader {
+    /* --var-loader-with: 32px; */
+    border: var(--var-loader-with) ridge var(--var-azul-light);
+    border-right: var(--var-loader-with) groove var(--var-azul-light);
+    border-radius: 50%;
+    border-top: var(--var-loader-with) groove var(--var-azul-dark);
+    width: 150px;
+    height: 150px !important;
+    /* animation: spin 2s linear infinite; */
+    background-image: url("../assets/wait.svg");
+    padding: 16px;
+    position: relative;
+}
+
+    .loader .spin {
+        --var-with: 75px;
+        display: block;
+        border-radius: 50%;
+        border-width: var(--var-with);
+        border-style: solid;
+        border-color: transparent;
+        border-top: var(--var-with) solid var(--var-azul);
+        opacity: 75%;
+        animation: spin 5s steps(5) infinite;
+    }
+
+    .loader span::before {
+        /*animation: counter infinite 3s;*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        line-height: 182px;
+        font-size: 90px;
+        content: counter(count);
+        animation: counter 5s steps(5) infinite;
+        counter-reset: count 5;
+        color: var(--var-azul-dark);
+    }
+
+@keyframes counter {
+    0% {
+        counter-set: count 5;
+    }
+    25% {
+        counter-set: count 4;
+    }
+    50% {
+        counter-set: count 3;
+    }
+    75% {
+        counter-set: count 2;
+    }
+    100% {
+        counter-set: count 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 

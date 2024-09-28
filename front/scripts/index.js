@@ -77,15 +77,31 @@ const posterHTML = (Poster) => {
 }
 
 // Todas los posters a HTML
-function postersHTML() {
+const postersHTML = () => {
     const catalogo = document.getElementById("catalogo");
     catalogo.innerHTML = "";
+    catalogo.appendChild(makeWait());
 
     $.get("https://students-api.up.railway.app/movies", (data) => {
+        catalogo.innerHTML = "";
         const posters = data.map(posterHTML);
-
         posters.forEach(elemento => catalogo.appendChild(elemento));
     })
+}
+
+const makeWait = () => {
+    const wait = document.createElement("div");
+    wait.classList.add("loader-container");
+    const innerWait = document.createElement("div");
+    innerWait.classList.add("loader");
+    const slice = document.createElement("div");
+    slice.classList.add("spin");
+    const counter = document.createElement("span");
+    innerWait.appendChild(slice);
+    innerWait.appendChild(counter);
+    wait.appendChild(innerWait);
+
+    return wait;
 }
 
 postersHTML();
