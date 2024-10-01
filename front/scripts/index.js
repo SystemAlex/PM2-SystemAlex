@@ -76,19 +76,6 @@ const posterHTML = (Poster) => {
     return nuevoDiv;
 }
 
-// Todas los posters a HTML
-const postersHTML = () => {
-    const catalogo = document.getElementById("catalogo");
-    catalogo.innerHTML = "";
-    catalogo.appendChild(makeWait());
-
-    $.get("https://students-api.up.railway.app/movies", (data) => {
-        catalogo.innerHTML = "";
-        const posters = data.map(posterHTML);
-        posters.forEach(elemento => catalogo.appendChild(elemento));
-    })
-}
-
 const makeWait = () => {
     const wait = document.createElement("div");
     wait.classList.add("loader-container");
@@ -102,6 +89,28 @@ const makeWait = () => {
     wait.appendChild(innerWait);
 
     return wait;
+}
+
+const doneData = (data) => {
+    catalogo.innerHTML = "";
+    const posters = data.map(posterHTML);
+    posters.forEach(elemento => catalogo.appendChild(elemento));
+}
+
+const failData = (exeption) => {
+    setTimeout(() => {
+        catalogo.innerHTML = exeption.responseText;
+        const resp = catalogo.textContent;
+        catalogo.innerHTML = "Se Produjo una Excepcion<br><br>Comuniquese con el Administrador<b>Informar error: " + resp + "</b>";
+    }, 1000);
+}
+
+const postersHTML = () => {
+    const catalogo = document.getElementById("catalogo");
+    catalogo.innerHTML = "";
+    catalogo.appendChild(makeWait());
+
+    $.get("https://students-api.up.railway.app/movies").done(doneData).fail(failData);
 }
 
 postersHTML();

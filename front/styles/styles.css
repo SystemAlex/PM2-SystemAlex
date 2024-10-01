@@ -88,30 +88,30 @@ hr {
         text-wrap: nowrap;
     }
 
-        .top-menu li a, .film-menu li a {
-            color: var(--var-azul);
-            display: block;
-            border-top: 4px solid var(--var-azul);
-            padding: 2px 15px 0px 15px;
-            background-color: #001926;
-            height: 24px;
-            text-align: center;
+    .top-menu li a, .film-menu li a {
+        color: var(--var-azul);
+        display: block;
+        border-top: 4px solid var(--var-azul);
+        padding: 2px 15px 0px 15px;
+        background-color: #001926;
+        height: 24px;
+        text-align: center;
+    }
+
+        .top-menu li a:hover, .top-menu li .active, .film-menu li a:hover {
+            background-color: var(--var-azul);
+            color: #001926;
         }
 
-            .top-menu li a:hover, .top-menu li .active, .film-menu li a:hover {
-                background-color: var(--var-azul);
-                color: #001926;
-            }
-
-        .top-menu li h2 {
-            text-align: center;
-            color: var(--var-azul-light);
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            pointer-events: none;
-            text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
-        }
+    .top-menu li h2 {
+        text-align: center;
+        color: var(--var-azul-light);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        pointer-events: none;
+        text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
+    }
 
     .top-menu li img, .film-menu li img {
         width: 67px;
@@ -534,6 +534,21 @@ figcaption {
     overflow: auto;
     padding: 12px;
 }
+
+    #catalogo:not(:has(div)) {
+        text-align: center;
+        color: var(--var-azul-light);
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        pointer-events: none;
+        text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
+        flex-direction: column;
+    }
+
+        #catalogo:not(:has(div)) b {
+            color: red;
+        }
 
 @media (max-width:640px) {
     :root {
