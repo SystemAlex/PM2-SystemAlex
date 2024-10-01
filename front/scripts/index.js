@@ -101,7 +101,7 @@ const failData = (exeption) => {
     setTimeout(() => {
         catalogo.innerHTML = exeption.responseText;
         const resp = catalogo.textContent;
-        catalogo.innerHTML = "Se Produjo una Excepcion<br><br>Comuniquese con el Administrador<b>Informar error: " + resp + "</b>";
+        catalogo.innerHTML = "Se Produjo una Excepción<br><br>Comuníquese con el Administrador<b>Informar error: " + resp + "</b>";
     }, 1000);
 }
 
