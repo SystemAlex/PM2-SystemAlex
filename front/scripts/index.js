@@ -10,6 +10,10 @@ const posterHTML = (Poster) => {
     const titulo = document.createElement("a");
     titulo.innerHTML = title;
     titulo.title = title;
+    titulo.setAttribute("data-bs-toggle", "tooltip");
+    titulo.setAttribute("data-bs-placement", "auto");
+    titulo.setAttribute("data-bs-delay", '{ "show": 500, "hide": 100 }');
+    titulo.setAttribute("data-bs-custom-class", "custom-tooltip");
     const posterDiv = document.createElement("div");
     posterDiv.classList.add("poster");
 
@@ -32,6 +36,10 @@ const posterHTML = (Poster) => {
     //imgPoster.alt = title;
     //imgPoster.src = poster;
     imgPoster.title = title;
+    imgPoster.setAttribute("data-bs-toggle", "tooltip");
+    imgPoster.setAttribute("data-bs-placement", "auto");
+    imgPoster.setAttribute("data-bs-delay", '{ "show": 500, "hide": 100 }');
+    imgPoster.setAttribute("data-bs-custom-class", "custom-tooltip");
     imgPoster.classList.add("img");
     imgPoster.style.backgroundImage = "url('" + poster + "')";
     const divFilm = document.createElement("div");
@@ -95,6 +103,9 @@ const doneData = (data) => {
     catalogo.innerHTML = "";
     const posters = data.map(posterHTML);
     posters.forEach(elemento => catalogo.appendChild(elemento));
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 }
 
 const failData = (exeption) => {

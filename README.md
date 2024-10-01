@@ -13,8 +13,9 @@ por SystemAlex
  - Manipulación del DOM con JavaScript. ✓
  - Solicitudes HTTP con AJAX. ✓
 
-## Lecture 3 - Frameworks CSS
-⌛...
+## Lecture 3 - Frameworks CSS ✔️
+ - Aplicación de estilos con CSS. ✓
+ - Aplicación de estilos utilizando el framework Bootstrap. ✓
 
 ## Lecture 4 - Node
 ⌛...
