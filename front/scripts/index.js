@@ -1,5 +1,5 @@
 //console.log(tempData);
-// Actividad a HTML
+
 const posterHTML = (Poster) => {
     const { title, year, director, duration, genre, rate, poster } = Poster;
 
