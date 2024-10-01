@@ -182,14 +182,25 @@ hr {
     }
 
     .proyecto * {
+        --bs-accordion-active-bg: #D8E6F9BF;
         color: var(--var-azul-light);
         background-color: transparent;
-        padding: 0px;
+        box-sizing: border-box;
+        border-color: var(--var-azul-light);
     }
 
     .proyecto p {
         margin-left: 10px;
+        margin-bottom: 0px;
     }
+
+.accordion-button.collapsed {
+    text-shadow: 1px 1px 0px var(--var-azul-dark), -1px -1px 0px var(--var-azul-dark), -1px 1px 0px var(--var-azul-dark), 1px -1px 0px var(--var-azul-dark);
+}
+
+.accordion-button::after {
+    filter: drop-shadow(0px 0px 1px var(--var-azul-light));
+}
 
 .p-10 {
     padding: 10px;
