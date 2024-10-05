@@ -12,8 +12,8 @@
         actividad: ["- Aplicación de estilos con CSS. ✓", "- Aplicación de estilos utilizando el framework Bootstrap. ✓"]
     },
     {
-        titulo: "Lecture 4 - Node",
-        actividad: ["⌛..."]
+        titulo: "Lecture 4 - Node ✔️",
+        actividad: ["- Instalación y configuración de dependencias con NPM. ✓"]
     },
     {
         titulo: "Lecture 5 - Testing Advanced",

@@ -17,8 +17,8 @@ por SystemAlex
  - Aplicación de estilos con CSS. ✓
  - Aplicación de estilos utilizando el framework Bootstrap. ✓
 
-## Lecture 4 - Node
-⌛...
+## Lecture 4 - Node ✔️
+ - Instalación y configuración de dependencias con NPM.  ✓
 
 ## Lecture 5 - Testing Advanced
 ⌛...
