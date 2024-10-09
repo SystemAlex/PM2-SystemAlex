@@ -10,7 +10,7 @@ if (catalogo !== null) {
     catalogo.appendChild(makeWait());
 
     $.get("https://students-api.up.railway.app/movies").done(doneData).fail(failData);
-} else if (modulos !== null) { 
+} else if (modulos !== null) {
     const modulodos = require("./proyecto");
     const losmodulos = modulodos.map(moduloHTML);
     losmodulos.forEach(elemento => modulos.appendChild(elemento));

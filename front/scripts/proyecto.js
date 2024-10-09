@@ -17,7 +17,7 @@
     },
     {
         titulo: "Lecture 5 - Testing Advanced",
-        actividad: ["⌛..."]
+        actividad: [" - Testing con Jest. ✓", "- Aplicación de Estrategia de TDD. ✓"]
     },
     {
         titulo: "Lecture 6 - Asincronismo",

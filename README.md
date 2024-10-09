@@ -18,10 +18,11 @@ por SystemAlex
  - Aplicación de estilos utilizando el framework Bootstrap. ✓
 
 ## Lecture 4 - Node ✔️
- - Instalación y configuración de dependencias con NPM.  ✓
+ - Instalación y configuración de dependencias con NPM. ✓
 
 ## Lecture 5 - Testing Advanced
-⌛...
+ - Testing con Jest. ✓
+ - Aplicación de Estrategia de TDD. ✓
 
 ## Lecture 6 - Asincronismo
 ⌛...
