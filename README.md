@@ -20,12 +20,12 @@ por SystemAlex
 ## Lecture 4 - Node ✔️
  - Instalación y configuración de dependencias con NPM. ✓
 
-## Lecture 5 - Testing Advanced
+## Lecture 5 - Testing Advanced ✔️
  - Testing con Jest. ✓
  - Aplicación de Estrategia de TDD. ✓
 
-## Lecture 6 - Asincronismo
-⌛...
+## Lecture 6 - Asincronismo ✔️
+ - Manejo de asincronía con Promesas y Async/Await. ✓
 
 ## Lecture 7 - Express
 ⌛...

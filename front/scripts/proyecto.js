@@ -16,12 +16,12 @@
         actividad: ["- Instalación y configuración de dependencias con NPM. ✓"]
     },
     {
-        titulo: "Lecture 5 - Testing Advanced",
+        titulo: "Lecture 5 - Testing Advanced ✔️",
         actividad: [" - Testing con Jest. ✓", "- Aplicación de Estrategia de TDD. ✓"]
     },
     {
-        titulo: "Lecture 6 - Asincronismo",
-        actividad: ["⌛..."]
+        titulo: "Lecture 6 - Asincronismo ✔️",
+        actividad: ["- Manejo de asincronía con Promesas y Async/Await. ✓"]
     },
     {
         titulo: "Lecture 7 - Express",
