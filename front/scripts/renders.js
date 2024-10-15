@@ -97,9 +97,9 @@ const makeWait = () => {
     return wait;
 }
 
-const doneData = (data) => {
+const doneData = ({data}) => {
     catalogo.innerHTML = "";
-    const posters = data.data.map(posterHTML);
+    const posters = data.map(posterHTML);
     posters.forEach(elemento => catalogo.appendChild(elemento));
 
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
