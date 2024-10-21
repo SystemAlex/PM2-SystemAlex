@@ -27,8 +27,8 @@ por SystemAlex
 ## Lecture 6 - Asincronismo ✔️
  - Manejo de asincronía con Promesas y Async/Await. ✓
 
-## Lecture 7 - Express
-⌛...
+## Lecture 7 - Express ✔️
+ - Desarrollo de servidor HTTP utilizando la librería Express. ✓
 
 ## Lecture 8 - Express II
 ⌛...

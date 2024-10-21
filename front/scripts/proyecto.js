@@ -24,8 +24,8 @@
         actividad: ["- Manejo de asincronía con Promesas y Async/Await. ✓"]
     },
     {
-        titulo: "Lecture 7 - Express",
-        actividad: ["⌛..."]
+        titulo: "Lecture 7 - Express ✔️",
+        actividad: ["Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
     },
     {
         titulo: "Lecture 8 - Express II",
