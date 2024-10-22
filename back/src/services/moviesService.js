@@ -31,6 +31,26 @@ const moviesService = {
                 poster:
                     "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
             },
+            {
+                title: "The Avengers",
+                year: 2012,
+                director: "Joss Whedon",
+                duration: "2h 23min",
+                genre: ["Action", "Sci-Fi"],
+                rate: 8,
+                poster:
+                    "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+            },
+            {
+                title: "Mission: Impossible - Ghost Protocol",
+                year: 2011,
+                director: "Brad Bird",
+                duration: "2h 12min",
+                genre: ["Action", "Adventure", "Thriller"],
+                rate: 7.4,
+                poster:
+                    "https://m.media-amazon.com/images/M/MV5BMTY4MTUxMjQ5OV5BMl5BanBnXkFtZTcwNTUyMzg5Ng@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+            },
         ];
 
         return movies;
