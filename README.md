@@ -30,8 +30,8 @@ por SystemAlex
 ## Lecture 7 - Express ✔️
  - Desarrollo de servidor HTTP utilizando la librería Express. ✓
 
-## Lecture 8 - Express II
-⌛...
+## Lecture 8 - Express II ✔️
+ - Desarrollo de servidor HTTP utilizando la librería express. ✓
 
 ## Lecture 9 - Database Fundamentals
 ⌛...

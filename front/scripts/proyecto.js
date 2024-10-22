@@ -28,8 +28,8 @@
         actividad: ["Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
     },
     {
-        titulo: "Lecture 8 - Express II",
-        actividad: ["⌛..."]
+        titulo: "Lecture 8 - Express II ✔️",
+        actividad: ["Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
     },
     {
         titulo: "Lecture 9 - Database Fundamentals",

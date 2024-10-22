@@ -10,7 +10,7 @@ if (catalogo !== null) {
     catalogo.innerHTML = "";
     catalogo.appendChild(makeWait());
 
-    axios.get("https://students-api.up.railway.app/movies").then(doneData).catch(failData);
+    axios.get("http://localhost:3000/movies").then(doneData).catch(failData);
 } else if (modulos !== null) {
     const modulodos = require("./proyecto");
     const losmodulos = modulodos.map(moduloHTML);
