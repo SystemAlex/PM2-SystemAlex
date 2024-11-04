@@ -1,6 +1,6 @@
 const moviesService = {
     getMovies: () => {
-        const movies = [
+        return [
             {
                 title: "Guardians of the Galaxy Vol. 2",
                 year: 2017,
@@ -52,9 +52,7 @@ const moviesService = {
                     "https://m.media-amazon.com/images/M/MV5BMTY4MTUxMjQ5OV5BMl5BanBnXkFtZTcwNTUyMzg5Ng@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
             },
         ];
-
-        return movies;
     }
-}
+};
 
 module.exports = moviesService;
