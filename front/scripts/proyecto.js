@@ -25,15 +25,15 @@
     },
     {
         titulo: "Lecture 7 - Express ✔️",
-        actividad: ["Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
+        actividad: ["- Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
     },
     {
         titulo: "Lecture 8 - Express II ✔️",
-        actividad: ["Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
+        actividad: ["- Desarrollo de servidor HTTP utilizando la librería Express. ✓"]
     },
     {
-        titulo: "Lecture 9 - Database Fundamentals",
-        actividad: ["⌛..."]
+        titulo: "Lecture 9 - Database Fundamentals ✔️",
+        actividad: ["- Desarrollo de una vista de formulario para la creación de películas. ✓"]
     },
     {
         titulo: "Lecture 10 - MongoDB",

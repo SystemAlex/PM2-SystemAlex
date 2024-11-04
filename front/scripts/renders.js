@@ -23,7 +23,7 @@
     spanRating.classList.add("rating");
     const imgStar = document.createElement("img");
     imgStar.classList.add("rating-star");
-    imgStar.src = "assets/star.svg";
+    imgStar.src = "/assets/star.svg";
     const spanRate = document.createElement("span");
     spanRate.classList.add("rating-num");
     spanRate.innerHTML = rate;

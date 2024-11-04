@@ -536,6 +536,43 @@ figcaption {
         height: -webkit-fill-available;
     }
 
+#nuevo {
+    background-image: url("../assets/new-movie-background.jpg");
+}
+
+#nuevo .datos {
+        height: -webkit-fill-available;
+    }
+
+    #nuevo .datos form {
+        /*overflow: auto;
+        background-color: transparent;*/
+    }
+
+    #nuevo .modal.modal-dialog.modal-content {
+        background-color: transparent;
+        height: fit-content;
+        max-height: -webkit-fill-available;
+        border-color: var(--var-azul-dark);
+    }
+    
+    #nuevo .modal.modal-dialog.modal-content:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 50%;
+        background-color: var(--bs-modal-bg);
+    }
+
+    #nuevo .modal-footer {
+        z-index: 1;
+        border-color: var(--var-azul-dark);
+    }
+
 #about {
     background-image: url("../assets/programar.jpg");
 }

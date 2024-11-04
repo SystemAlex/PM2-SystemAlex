@@ -33,8 +33,8 @@ por SystemAlex
 ## Lecture 8 - Express II ✔️
  - Desarrollo de servidor HTTP utilizando la librería express. ✓
 
-## Lecture 9 - Database Fundamentals
-⌛...
+## Lecture 9 - Database Fundamentals ✔️
+ - Desarrollo de una vista de formulario para la creación de películas. ✓
 
 ## Lecture 10 - MongoDB
 ⌛...
