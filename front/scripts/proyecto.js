@@ -36,12 +36,12 @@
         actividad: ["- Desarrollo de una vista de formulario para la creación de películas. ✓"]
     },
     {
-        titulo: "Lecture 10 - MongoDB",
-        actividad: ["⌛..."]
+        titulo: "Lecture 10 - MongoDB ✔️",
+        actividad: ["- Creación de cluster de base de datos de MongoDB. ✓"]
     },
     {
-        titulo: "Lecture 11 - Mongoose",
-        actividad: ["⌛..."]
+        titulo: "Lecture 11 - Mongoose ✔️",
+        actividad: ["- 🚀 ¡Conecta tu base de datos con Mongoose y MongoDB Atlas! ✓"]
     },
     {
         titulo: "Lecture 12 - Mongoose II",

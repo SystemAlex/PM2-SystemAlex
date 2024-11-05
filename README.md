@@ -36,11 +36,11 @@ por SystemAlex
 ## Lecture 9 - Database Fundamentals ✔️
  - Desarrollo de una vista de formulario para la creación de películas. ✓
 
-## Lecture 10 - MongoDB
-⌛...
+## Lecture 10 - MongoDB ✔️
+ - Creación de cluster de base de datos de MongoDB. ✓
 
-## Lecture 11 - Mongoose
-⌛...
+## Lecture 11 - Mongoose ✔️
+ - 🚀 ¡Conecta tu base de datos con Mongoose y MongoDB Atlas! ✓
 
 ## Lecture 12 - Mongoose II
 ⌛...

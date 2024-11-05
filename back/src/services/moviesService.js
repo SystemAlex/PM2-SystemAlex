@@ -1,6 +1,9 @@
+const Movie = require("../models/Movies");
+
 const moviesService = {
-    getMovies: () => {
-        return [
+    getMovies: async () => {
+        return await Movie.find();
+/*         return [
             {
                 title: "Guardians of the Galaxy Vol. 2",
                 year: 2017,
@@ -51,7 +54,7 @@ const moviesService = {
                 poster:
                     "https://m.media-amazon.com/images/M/MV5BMTY4MTUxMjQ5OV5BMl5BanBnXkFtZTcwNTUyMzg5Ng@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
             },
-        ];
+        ]; */
     }
 };
 
