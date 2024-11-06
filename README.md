@@ -42,8 +42,10 @@ por SystemAlex
 ## Lecture 11 - Mongoose ✔️
  - 🚀 ¡Conecta tu base de datos con Mongoose y MongoDB Atlas! ✓
 
-## Lecture 12 - Mongoose II
-⌛...
+## Lecture 12 - Mongoose II ✔️
+ - Diseño de formulario y validación de datos con HTML y JavaScript. ✓
+ - Implementación de rutas y lógica con express. ✓
+ - Guardado de datos con mongoose. ✓
 
 ## Lecture 13 - Backend Advanced
 ⌛...

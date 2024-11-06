@@ -44,8 +44,8 @@
         actividad: ["- 🚀 ¡Conecta tu base de datos con Mongoose y MongoDB Atlas! ✓"]
     },
     {
-        titulo: "Lecture 12 - Mongoose II",
-        actividad: ["⌛..."]
+        titulo: "Lecture 12 - Mongoose II ✔️",
+        actividad: ["- Diseño de formulario y validación de datos con HTML y JavaScript. ✓", "- Implementación de rutas y lógica con express. ✓", "- Guardado de datos con mongoose. ✓"]
     },
     {
         titulo: "Lecture 13 - Backend Advanced",

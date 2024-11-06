@@ -449,7 +449,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     max-height: 100%;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     justify-content: center;
     /* opacity: 75%; */
 }
@@ -542,11 +542,6 @@ figcaption {
 
 #nuevo .datos {
         height: -webkit-fill-available;
-    }
-
-    #nuevo .datos form {
-        /*overflow: auto;
-        background-color: transparent;*/
     }
 
     #nuevo .modal.modal-dialog.modal-content {

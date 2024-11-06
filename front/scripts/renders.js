@@ -1,4 +1,7 @@
-﻿const posterHTML = (Poster) => {
+﻿
+const axios = require("axios");
+
+const posterHTML = (Poster) => {
     const { title, year, director, duration, genre, rate, poster } = Poster;
 
     const nuevoDiv = document.createElement("div");
@@ -163,4 +166,12 @@ const moduloHTML = (modulo) => {
     return item;
 }
 
-module.exports = { makeWait, doneData, failData, moduloHTML };
+const fillMovies = () => {
+    const catalogo = document.getElementById("catalogo");
+    catalogo.innerHTML = "";
+    catalogo.appendChild(makeWait());
+
+    axios.get("http://localhost:3000/movies").then(doneData).catch(failData);
+}
+
+module.exports = { fillMovies, moduloHTML };
