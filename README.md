@@ -47,9 +47,13 @@ por SystemAlex
  - Implementación de rutas y lógica con express. ✓
  - Guardado de datos con mongoose. ✓
 
-## Lecture 13 - Backend Advanced
-⌛...
+## Lecture 13 - Backend Advanced ✔️
+ - Diseño de formulario y validación de datos con HTML y JavaScript. ✓
+ - Implementación de rutas y lógica con express. ✓
+ - Guardado de datos con mongoose. ✓
 
-## Lecture 14 - JavaScript Advanced
-⌛...
+## Lecture 14 - JavaScript Advanced ✔️
+ - Diseño de formulario y validación de datos con HTML y JavaScript. ✓
+ - Implementación de rutas y lógica con express. ✓
+ - Guardado de datos con mongoose. ✓
 

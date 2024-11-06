@@ -48,12 +48,12 @@
         actividad: ["- Diseño de formulario y validación de datos con HTML y JavaScript. ✓", "- Implementación de rutas y lógica con express. ✓", "- Guardado de datos con mongoose. ✓"]
     },
     {
-        titulo: "Lecture 13 - Backend Advanced",
-        actividad: ["⌛..."]
+        titulo: "Lecture 13 - Backend Advanced ✔️",
+        actividad: ["- Diseño de formulario y validación de datos con HTML y JavaScript. ✓", "- Implementación de rutas y lógica con express. ✓", "- Guardado de datos con mongoose. ✓"]
     },
     {
-        titulo: "Lecture 14 - JavaScript Advanced",
-        actividad: ["⌛..."]
+        titulo: "Lecture 14 - JavaScript Advanced✔️",
+        actividad: ["- Diseño de formulario y validación de datos con HTML y JavaScript. ✓", "- Implementación de rutas y lógica con express. ✓", "- Guardado de datos con mongoose. ✓"]
     }
 ];
 
