@@ -1,6 +1,6 @@
 # Soy Henry - Proyecto M2
 por SystemAlex
-### Implementacion en linea https://systemalex.free.nf/m2
+### Implementacion en linea http://systemalex.free.nf/m2
 
 
 ## Lecture 1 - Proyectos Full Stack ✔️
@@ -57,3 +57,11 @@ por SystemAlex
  - Implementación de rutas y lógica con express. ✓
  - Guardado de datos con mongoose. ✓
 
+
+# Implementación
+
+```
+git clone https://github.com/SystemAlex/PM2-SystemAlex.git
+npm install
+npm start
+```
